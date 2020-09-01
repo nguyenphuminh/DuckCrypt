@@ -1,7 +1,7 @@
 function encode(){
   var b = document.querySelector(".box").value;
   var c = document.querySelector("#output");
-  var a = Math.round(Math.pow(100 + Math.random(100000000, 694206660), 2));
+  var a = Math.pow(Math.floor(Math.random() * 694206660 - 10000000) + 10000000, 2);
   b = b.replace(/a/g, 28 * a);
   b = b.replace(/b/g, 27 * a);
   b = b.replace(/c/g, 3 * a);
